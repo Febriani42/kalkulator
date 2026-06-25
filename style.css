@@ -1,0 +1,152 @@
+/* --- CSS TEMA: HITAM & BIRU CERAH --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0E1117;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #161B22;
+    border: 2px solid #00D2FF;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.2);
+}
+
+h1, h2, h3 {
+    color: #00D2FF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Form & Input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #888888;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    background-color: #0E1117;
+    border: 1px solid #30363D;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    border-color: #00D2FF;
+    outline: none;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00D2FF;
+    color: #000000;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00A8CC;
+    color: #FFFFFF;
+}
+
+/* Navigasi Menu */
+.nav-tabs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #30363D;
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    color: #888888;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+    color: #00D2FF;
+    border-bottom: 2px solid #00D2FF;
+    font-weight: bold;
+}
+
+/* Kuis */
+.soal-card {
+    background-color: #0E1117;
+    border: 1px solid #30363D;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.opsi-label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Biodata Footer */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #30363D;
+    font-size: 13px;
+    color: #CCCCCC;
+    line-height: 1.6;
+}
+
+.biodata-box {
+    border: 1px dashed #00D2FF;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #0E1117;
+    margin-top: 10px;
+}
+
+/* RESPONSIVITAS HP */
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    .container { padding: 15px; }
+    .nav-tabs { flex-direction: column; }
+    .tab-btn { border-bottom: none; border-left: 2px solid transparent; text-align: left; padding: 8px; }
+    .tab-btn.active { border-bottom: none; border-left: 2px solid #00D2FF; }
+}
